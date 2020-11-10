@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("open_sans/OpenSans-Regular.ttf") format("truetype");
+}
+
+body {
+  background: url("../img/fondo.jpg") no-repeat top left;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 5% 20% 0% 20%;
+  margin: 0;
+  text-align: center;
+  font-family: "Open Sans", "Arial";
+  font-size: 14px;
+}
+.portafolio{
+  text-align: center;
+}
+header {
+  background-color:rgb(13, 99, 197);
+  text-align: center;
+  color: black;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+}
+.nombre { grid-area: nombre; }
+.foto1 { grid-area: foto1; }
+.servicios { grid-area: servicios; }
+.foto2 { grid-area: foto2; }
+.foto3 { grid-area: foto3;}
+
+.grid-container {
+  background-color: rgb(255, 255, 255,0.3);
+  border-radius: 30px;
+  display: grid;
+  grid-template-areas: 
+  'nombre nombre foto1 foto1'
+  'servicios servicios servicios servicios'
+  'foto2 foto2 foto3 foto3';}
+
+  .Aprovecha { grid-area: Aprovecha; }
+  .texto { grid-area:texto ; }
+  .redes { grid-area: redes; }
+  .foto { grid-area: foto; }
+  
+  .newsletter {
+    border-radius: 30px;
+    background: url("../img/black_friday.jpeg")no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-areas: 
+    'Aprovecha redes redes redes'
+    'Aprovecha foto foto foto'
+    'Aprovecha texto texto texto';
+  }
+.Aprovecha {
+  margin-left: 10%;
+  margin-top: 10%;
+  transform: rotate(-90deg);
+
+}
+.texto{
+  margin-top: 120%;
+  color: white;
+  font-size: 150%;
+  margin-right: 30% ;
+}
+  .correo { grid-area: correo; }
+  .numero { grid-area:numero ; }
+  .copyright { grid-area: copyright; }
+  .redes1 { grid-area: redes1; }
+  
+  .footer {
+    font: normal 0.9rem "Open Sans";
+    padding: 10px 10%;
+    background-color: #3d4042;
+    color: seashell;
+    border-radius: 30px;
+    display: grid;
+    grid-template-areas: 
+    'correo correo numero numero'
+    'copyright copyright redes1 redes1';
+  }
+  .correo{
+    font-size: 200%;
+  }
+  .numero{
+    font-size: 200%;
+  }
+  .copyright{
+    font-size: 200%;
+  }
